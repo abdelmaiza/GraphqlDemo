@@ -47,7 +47,7 @@ create table votes (
 
 INSERT INTO "users" ("email","first_name","last_name","api_key")
 VALUES
-(E'samer@agilelabs.com',E'Samer',E'Buna',E'4242'),
+(E'maiza@agilelabs.com',E'maiza',E'abdel',E'4242'),
 (E'creative@mind.com',E'Creative',E'Mind',E'0000');
 
 INSERT INTO "contests" ("code","title","description","status","created_by")
