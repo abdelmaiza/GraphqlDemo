@@ -1,0 +1,35 @@
+scalar LocalDate
+type User{
+    userId: ID!
+    email: String!
+    firstName: String!
+    lastName: String!
+    apiKey: String!
+    createdAt: LocalDate
+}
+
+type Contest{
+    contestId: ID!
+    code: String!
+    title: String!
+    description: String
+    status: String!
+    createdBy: User!
+}
+
+type Name{
+    nameId : ID!
+    contest : Contest
+    label : String!
+    normalizedLabel : String!
+    description: String!
+    createdAt: LocalDate
+    createdBy: User!
+}
+
+type Query {
+    findAllContests: [Contest]!
+    countContests: Int!
+    findAllNames: [Name]!
+    countNames: Int!
+}
